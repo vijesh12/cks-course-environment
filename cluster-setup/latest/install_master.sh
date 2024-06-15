@@ -5,16 +5,16 @@
 set -e
 
 source /etc/lsb-release
-if [ "$DISTRIB_RELEASE" != "24.04" ]; then
-    echo "################################# "
-    echo "############ WARNING ############ "
-    echo "################################# "
-    echo
-    echo "This script only works on Ubuntu 20.04!"
-    echo "You're using: ${DISTRIB_DESCRIPTION}"
-    echo "Better ABORT with Ctrl+C. Or press any key to continue the install"
-    read
-fi
+# if [ "$DISTRIB_RELEASE" != "24.04" ]; then
+#     echo "################################# "
+#     echo "############ WARNING ############ "
+#     echo "################################# "
+#     echo
+#     echo "This script only works on Ubuntu 20.04!"
+#     echo "You're using: ${DISTRIB_DESCRIPTION}"
+#     echo "Better ABORT with Ctrl+C. Or press any key to continue the install"
+#     read
+# fi
 
 KUBE_VERSION=1.30.2
 
