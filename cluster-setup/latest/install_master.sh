@@ -79,6 +79,7 @@ mkdir -p /etc/apt/keyrings
 rm /etc/apt/keyrings/kubernetes-1-27-apt-keyring.gpg || true
 rm /etc/apt/keyrings/kubernetes-1-28-apt-keyring.gpg || true
 rm /etc/apt/keyrings/kubernetes-1-29-apt-keyring.gpg || true
+rm /etc/apt/keyrings/kubernetes-1-30-apt-keyring.gpg || true
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.27/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-1-27-apt-keyring.gpg
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-1-28-apt-keyring.gpg
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-1-29-apt-keyring.gpg
